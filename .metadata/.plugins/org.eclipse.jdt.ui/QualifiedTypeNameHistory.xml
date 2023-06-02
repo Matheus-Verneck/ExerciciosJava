@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="model.Carro2"/>
+    <fullyQualifiedTypeName name="model.Carro"/>
+    <fullyQualifiedTypeName name="util.Teclado"/>
+    <fullyQualifiedTypeName name="model.Mamifero"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Locale"/>
+</qualifiedTypeNameHistroy>

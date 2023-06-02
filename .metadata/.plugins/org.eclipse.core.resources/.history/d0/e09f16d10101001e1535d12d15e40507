@@ -1,0 +1,60 @@
+package controller;
+
+import model.Carro;
+
+public class Cadastro {
+
+	public static void main(String[] args) {
+
+		//criado no construtor simples
+		Carro uno = new Carro();
+		uno.setFabricante("Fiat");
+		uno.setModelo("Uno Mille");
+		uno.setAno(2010);
+		uno.setMotorLigado(false);
+		uno.setVelocidade(0);
+			
+		//criado no construtor completo
+		Carro gol = new Carro("Vw", "Gol Turbo", 2018, true, 70);
+		
+		//criado no construtor personalizado
+		Carro ka = new Carro("Ford", "Ka Sedan", 2020);
+	    System.out.println("Modelo: " + ka.getModelo() 
+		+ "\nMotor ligado? " + ka.isMotorLigado()
+		+ "\nVelocidade: " + ka.getVelocidade());
+		
+		uno.detalhes();
+		gol.detalhes();
+		ka.detalhes();
+		
+		String texto = uno.situacaoMotor();
+		System.out.println(texto);
+		System.out.println(gol.situacaoMotor());
+		System.out.println(ka.situacaoMotor());
+		
+		System.out.println(uno.ligarMotor());
+		System.out.println(gol.ligarMotor());
+		System.out.println(ka.ligarMotor());
+
+		System.out.println(uno.situacaoMotor());
+		System.out.println(gol.situacaoMotor());
+		System.out.println(ka.situacaoMotor());
+		
+		System.out.println(uno.desligarMotor());
+		System.out.println(gol.desligarMotor());
+		
+		System.out.println(uno.acelerar(50));
+		System.out.println(gol.acelerar(20));
+		System.out.println(ka.acelerar(120));
+		
+		System.out.println(uno.situacaoMotor());
+		System.out.println(gol.situacaoMotor());
+		System.out.println(ka.situacaoMotor());
+		
+		System.out.println(uno.frear(50));
+		System.out.println(gol.frear(10));
+		System.out.println(ka.frear(100));
+
+	}//fim do main
+
+}//fim da classe
